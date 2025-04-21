@@ -24,16 +24,6 @@ class Pet:
         else:
             print(f"{self.name} is too tired to play.")
 
-    def get_status(self):
-        print(f"\n--- {self.name}'s Status ---")
-        print(f"Hunger: {self.hunger}/10")
-        print(f"Energy: {self.energy}/10")
-        print(f"Happiness: {self.happiness}/10")
-        if self.tricks:
-            print(f"Tricks learned: {', '.join(self.tricks)}")
-        else:
-            print(f"{self.name} hasn't learned any tricks yet.")
-        print("------------------------")
 
     def train(self, trick):
         if trick not in self.tricks:
@@ -50,3 +40,15 @@ class Pet:
             print("-----------------------")
         else:
             print(f"{self.name} hasn't learned any tricks yet.")
+
+
+    def get_status(self):
+        print(f"\n--- {self.name}'s Status ---")
+        print(f"Hunger: {self.hunger}/10")
+        print(f"Energy: {self.energy}/10")
+        print(f"Happiness: {self.happiness}/10")
+        if self.tricks:
+            print(f"Tricks learned: {', '.join(self.tricks)}")
+        else:
+            print(f"{self.name} hasn't learned any tricks yet.")
+        print("------------------------")

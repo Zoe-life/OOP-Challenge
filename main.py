@@ -19,4 +19,4 @@ if __name__ == "__main__":
     my_pet.play()
     my_pet.get_status()
 
-    my_pet.train("Fetch") # Trying to teach an existing trick
+    my_pet.train("Fetch")  # Trying to teach an existing trick
